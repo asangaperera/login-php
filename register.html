@@ -1,0 +1,56 @@
+<html>
+<head>
+<title>User Registration</title>
+
+
+</head>
+
+<body style ="background-image: url('image/banner1-960x300.jpg'); background-size: height :50%; background-color:345678; background-position:top ; background-repeat: no-repeat;">
+<center>
+<table border="0" cellpadding="6" cellspacing="0" width="949" height="970" >
+  <tr>
+    <td colspan="5" height="96">
+        <form name="formRegister" method="post" action="ConfirmR.php" onSubmit="return submitForms()" "return checkPw(this)">
+        <h1 align="center">User Registration</h1>
+        <table width="400" align="center" border="0">
+          <tr>
+            <td bgColor="c6d3ce">
+              <table width="400" border="0">
+                <tr bgColor="de6677">
+                  <td>Username</td>
+                  <td><b><input type="text" size="20" name="Username" placeholder="Your username"></b></td>
+                </tr>
+                <tr bgColor="e7efef">
+                  <td>Password</td>
+                  <td><b><input type="password" maxlength="10" name="pw1" placeholder="*****" size="20"></b></td>
+                </tr>
+                <tr bgColor="de6677">
+                  <td>Re-Password</td>
+                  <td><b><input type="password" maxlength="10" name="pw2" placeholder="*****" onchange="acceptY()" size="20"></b></td>
+                </tr>
+                <tr bgColor="e7efef">
+                  <td>Email</td>
+                  <td><b><input type="text" size="30" name="Email" placeholder="Email"></b></td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+        </table>
+        <br>
+        <table width="600" align="center" border="0">
+          <tr >
+            <td align="center" width="300" ><input type="submit" value="Submit"></td>
+            <td align="center" width="300"  ><input type="reset" name="reset" value="Reset Form" onClick="return confirm('Are you sure you want to clear the current information?');"></td>
+          </tr>
+        </table>
+      </form>
+	  <p align="center"><a href="index.php">Home Page</a></p>
+    </td>
+  </tr>
+</table>
+</center>
+
+
+</body>
+
+</html>
